@@ -13,13 +13,14 @@
 <body>
 <div class="container-fluid p-5">
     <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-            <div class="card">
+        <div class="col-lg-7 offset-lg-3">
+            <div class="card border border-2 border-dark">
                 <div class="card-body text-center">
+                    <i class="bi bi-person-vcard fs-1"></i>
                     <h2>Cadastro de Leitores</h2>
                 </div>
                 <div class="card-body">
-                    <form class="row g-3">
+                    <form class="row g-3" action="" method="post">
                         <div class="col-md-12">
                             <label for="inputNome4" class="form-label">Nome</label>
                             <input type="text" class="form-control" id="inputNome4">
@@ -69,8 +70,8 @@
                                 <option>Servidor</option>
                             </select>
                         </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Casdastro</button>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary container-fluid ">Casdastro</button>
                         </div>
                     </form>
                 </div>
