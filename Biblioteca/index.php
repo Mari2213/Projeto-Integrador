@@ -19,36 +19,7 @@
         </button>
     </div>
 </nav>
-<div class="container-fluid custom-container p-5">
-    <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h2>Cadastro</h2>
-                </div>
-                <div class="card-body">
-                    <form action="cadastro.php" method="post">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="usuario" id="floatingInput" placeholder="Digite o seu login">
-                            <label>Usuário</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" name="senha" id="floatingPassword" placeholder="Digite sua senha">
-                            <label>Senha</label>
-                        </div>
-                        <div class="mb-3">
-                            <button type="button" class="container-fluid btn btn-primary">Cadastrar</button>
-                        </div>
-                        <div class="mb-3">
-                            <a href="#" onclick="showLoginForm()">Voltar para o login</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid  custom-container-login p-5">
+<div class="container-fluid p-5">
     <div class="row">
         <div class="col-lg-4 offset-lg-4">
             <div class="card">
@@ -74,7 +45,7 @@
                             <button type="submit" class="container-fluid btn btn-primary">Entrar</button>
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-primary" onclick="showSignUpForm()">Cadastro</button>
+                            <button class="btn btn-primary" type="submit">Cadastro</button>
                         </div>
                     </form>
                 </div>
@@ -85,15 +56,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-<script>
-    function showLoginForm() {
-        document.querySelector('.custom-container').style.display = 'none';
-        document.querySelector('.custom-container-login').style.display = 'block'
-    }
-    function showSignUpForm() {
-        document.querySelector('.custom-container').style.display = 'block';
-        document.querySelector('.custom-container-login').style.display = 'none'
-    }
-</script>
 </body>
 </html>
